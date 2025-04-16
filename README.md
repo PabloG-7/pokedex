@@ -22,8 +22,3 @@ Acesse a Pokédex online aqui: [Pokédex](https://pokedex-ten-chi.vercel.app/)
 - *Tailwind CSS*: Framework CSS para estilização rápida e responsiva.
 - *GitHub Pages*: Hospedagem do site.
 
-## Como Rodar o Projeto Localmente
-
-1. *Clone o Repositório*:
-   ```bash
-   git clone https://github.com/PabloG-7/pokedex-react.git
