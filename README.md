@@ -4,7 +4,7 @@ Uma Pokédex interativa construída com *React* e PokéAPI, permitindo listar, b
 
 ## Demonstração
 
-Acesse a Pokédex online aqui: [Pokédex]( https://pablog-7.github.io/pokedex/)
+Acesse a Pokédex online aqui: [Pokédex](https://pokedex-ten-chi.vercel.app/)
 
 ## Funcionalidades
 
@@ -22,8 +22,3 @@ Acesse a Pokédex online aqui: [Pokédex]( https://pablog-7.github.io/pokedex/)
 - *Tailwind CSS*: Framework CSS para estilização rápida e responsiva.
 - *GitHub Pages*: Hospedagem do site.
 
-## Como Rodar o Projeto Localmente
-
-1. *Clone o Repositório*:
-   ```bash
-   git clone https://github.com/PabloG-7/pokedex-react.git
