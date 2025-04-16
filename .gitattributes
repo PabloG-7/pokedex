@@ -1,2 +1,3 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+git add .gitattributes
+git commit -m "Adiciona .gitattributes para classificar arquivos .jsx como React"
+git push origin main
