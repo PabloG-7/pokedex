@@ -1,10 +1,10 @@
 # Pokédex
 
-Uma Pokédex interativa construída com React e PokéAPI, permitindo listar, buscar e visualizar detalhes de Pokémon. O projeto apresenta um design moderno, responsivo e com uma experiência de usuário fluida.
+Uma Pokédex interativa construída com *React* e PokéAPI, permitindo listar, buscar e visualizar detalhes de Pokémon. O projeto apresenta um design moderno, responsivo e com uma experiência de usuário fluida.
 
 ## Demonstração
 
-Acesse a Pokédex online aqui: [Pokédex](https://PabloG-7.github.io/pokedex-react)
+Acesse a Pokédex online aqui: [Pokédex]( https://pablog-7.github.io/pokedex/)
 
 ## Funcionalidades
 
