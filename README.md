@@ -4,7 +4,7 @@ Uma Pokédex interativa construída com *React* e PokéAPI, permitindo listar, b
 
 ## Demonstração
 
-Acesse a Pokédex online aqui: [Pokédex]( https://pablog-7.github.io/pokedex/)
+Acesse a Pokédex online aqui: [Pokédex](https://pokedex-ten-chi.vercel.app/)
 
 ## Funcionalidades
 
