@@ -4,7 +4,7 @@ Uma Pokédex interativa construída com *React* e PokéAPI, permitindo listar, b
 
 ## Demonstração
 
-Acesse a Pokédex online aqui: [Pokédex](https://pokedex-ten-chi.vercel.app/)
+Acesse a Pokédex online aqui: [Pokédex](https://pokedex-eight-drab-61.vercel.app/)
 
 ## Funcionalidades
 
@@ -21,4 +21,3 @@ Acesse a Pokédex online aqui: [Pokédex](https://pokedex-ten-chi.vercel.app/)
 - *Axios*: Para realizar requisições HTTP à PokéAPI.
 - *Tailwind CSS*: Framework CSS para estilização rápida e responsiva.
 - *GitHub Pages*: Hospedagem do site.
-
