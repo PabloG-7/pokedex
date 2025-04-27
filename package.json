@@ -1,6 +1,7 @@
 {
   "name": "pokedex",
   "private": true,
+  "homepage": "https://pablog-7.github.io/pokedex",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -8,7 +9,7 @@
   "build": "vite build",
   "preview": "vite preview",
   "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
+  "deploy": "gh-pages -d build"
 },
   "dependencies": {
     "axios": "^1.8.4",
