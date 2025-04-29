@@ -1,9 +1,5 @@
 # <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" width="40" height="40"> Pokédex React
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Deploy with Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel&color=000000)
-[![GitHub Stars](https://img.shields.io/github/stars/pablog-7/pokedex-react?style=social)](https://github.com/pablog-7/pokedex-react)
-
 Uma Pokédex interativa construída com React e PokéAPI, com design moderno e responsivo para explorar o mundo Pokémon.
 
 ![Demonstração da Pokédex](./pokedex.png?raw=true)
@@ -37,16 +33,13 @@ Uma Pokédex interativa construída com React e PokéAPI, com design moderno e r
 | <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" width="16"> Tailwind CSS | Estilização rápida |
 | <img src="https://vercel.com/favicon.ico" width="16"> Vercel | Hospedagem e Deploy |
 
-## 🚀 Executando Localmente
+## 🚀 Como Rodar o Projeto
 
+### Localmente:
 ```bash
-# Clone o repositório
 git clone https://github.com/pablog-7/pokedex-react.git
-
-# Instale as dependências
+cd pokedex-react
 npm install
-
-# Inicie o servidor
 npm start
 
 ```
