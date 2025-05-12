@@ -3,7 +3,7 @@
 Uma Pokédex interativa construída com React e PokéAPI, com design moderno e responsivo para explorar o mundo Pokémon.
 
 <a href="https://pokedex-eight-drab-61.vercel.app/">
-  <img src="https://raw.githubusercontent.com/PabloG-7/pokedex/refs/heads/main/pokedex-apresentacao.png" width="700" alt="Preview pokedex">
+  <img src="https://raw.githubusercontent.com/PabloG-7/pokedex/refs/heads/main/pokedex-apresentacao.png" alt="Preview pokedex">
 </a>
 
 ## 🔗 Demo Online
