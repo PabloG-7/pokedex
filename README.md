@@ -2,7 +2,9 @@
 
 Uma Pokédex interativa construída com React e PokéAPI, com design moderno e responsivo para explorar o mundo Pokémon.
 
-![Demonstração da Pokédex](https://raw.githubusercontent.com/PabloG-7/pokedex/refs/heads/main/pokedex-apresentacao.png)
+<a href="https://pablog-7.github.io/ecommerce-luckpet/">
+  <img src="https://raw.githubusercontent.com/PabloG-7/pokedex/refs/heads/main/pokedex-apresentacao.png" width="700" alt="Preview pokedex">
+</a>
 
 ## 🔗 Demo Online
 
