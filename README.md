@@ -2,7 +2,7 @@
 
 Uma Pokédex interativa construída com React e PokéAPI, com design moderno e responsivo para explorar o mundo Pokémon.
 
-  <img src="https://raw.githubusercontent.com/PabloG-7/pokedex/refs/heads/main/pokedex-apresentacao.png" width="600" alt="Preview pokedex">
+  <img src="https://raw.githubusercontent.com/PabloG-7/pokedex/refs/heads/main/pokedex-apresentacao.png" alt="Preview pokedex">
 
 ## 🔗 Demo Online
 
