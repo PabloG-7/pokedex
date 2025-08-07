@@ -71,7 +71,7 @@
 .details {
   flex: 1 1 400px;
   display: flex;
-  background-color: #ffb458;
+  background-color: rgb(255, 136, 0);
   flex-direction: column;
   gap: 2rem;
 }
