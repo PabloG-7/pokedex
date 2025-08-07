@@ -1,0 +1,61 @@
+/* index.css */
+:root {
+  --primary-blue: #2a75bb;
+  --secondary-blue: #3b82f6;
+  --primary-orange: #ff9e3f;
+  --secondary-orange: #ffb347;
+  --background-light: #f8fafc;
+  --card-bg: #ffffff;
+  --text-dark: #1e293b;
+  --text-light: #64748b;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #ffaa00dd;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Adicione isso para os cards */
+.card {
+  background: var(--card-bg);
+  border: 1px solid #e2e8f0;
+  /* restante permanece igual */
+}
+
+/* Adicione isso para os botões e elementos interativos */
+button, .searchInput:focus {
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(42, 117, 187, 0.2);
+}
+
+/* Adicione cores para os headers */
+h1, h2, h3 {
+  color: #000dff;
+}
+
+/* Adicione destaque laranja para elementos importantes */
+.highlight {
+  color: var(--primary-orange);
+}
+
+button {
+  transition: all 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Melhorando a responsividade */
+@media (max-width: 480px) {
+  .pokemonGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .backButton {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,76 @@
+/* Home.module.css */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.title {
+  text-align: center;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.pokemonGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Adicione isso ao arquivo */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.title {
+  margin: 1rem 0;
+  color: #000dff;
+  font-size: 2.5rem;
+}
+
+.searchWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.loadMoreButton {
+  background: #000dff;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  margin: 2rem auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.loadMoreButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.loadMoreButton:active {
+  transform: translateY(0);
+}
+
+/* Restante do arquivo permanece igual */
+
+@media (max-width: 768px) {
+  .pokemonGrid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pokemonGrid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}
