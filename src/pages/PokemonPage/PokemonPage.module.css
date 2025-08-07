@@ -7,9 +7,9 @@
 }
 
 .backButton {
-  background: none;
+  background:#0044ff;
   border: none;
-  color: var(--primary-blue, #2a75bb);
+  color: white;
   font-size: 1rem;
   cursor: pointer;
   margin-bottom: 1.5rem;
@@ -71,6 +71,7 @@
 .details {
   flex: 1 1 400px;
   display: flex;
+  background-color: #ffb458;
   flex-direction: column;
   gap: 2rem;
 }
