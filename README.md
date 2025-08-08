@@ -1,12 +1,60 @@
-# React + Vite
+# Pokédex 🧿
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma Pokédex interativa criada com **React**, **Vite** e **JavaScript**, que consome dados da [PokéAPI](https://pokeapi.co). Você pode buscar Pokémon, ver seus detalhes (tipos, habilidades, status) e carregar mais conforme necessário.
 
-Currently, two official plugins are available:
+## 🚀 Demonstração
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 [Acesse o projeto online aqui](https://pokedex-nine-vert.vercel.app)
 
-## Expanding the ESLint configuration
+## 🔧 Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔍 Busca em tempo real por nome
+- 📦 Carregamento incremental de Pokémon
+- 📋 Exibição dos tipos com cores
+- 📊 Detalhes com barras de status
+- ⚡ Interface rápida e responsiva
+
+## 🛠 Tecnologias Usadas
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Axios](https://axios-http.com/)
+- [React Router DOM](https://reactrouter.com/)
+- CSS Modules
+
+- ## ▶️ Como Rodar o Projeto
+
+```bash
+# 1. Clone o repositório
+git clone https://github.com/seu-usuario/pokedex.git
+
+# 2. Acesse a pasta
+cd pokedex
+
+# 3. Instale as dependências
+npm install
+
+# 4. Rode a aplicação
+npm run dev
+```
+
+## 📦 Deploy
+
+Hospedado gratuitamente na [Vercel](https://vercel.com/).
+
+---
+
+## 📌 Melhorias Futuras
+
+- 🌑 Modo escuro
+- 🎨 Filtro por tipo (Fogo, Água, etc.)
+- 🧪 Testes automatizados com Vitest
+- 🌀 Animações com Framer Motion
+- 🧙‍♂️ Melhoria na acessibilidade (atalhos de teclado e ARIA)
+
+---
+
+## 📃 Licença
+
+Projeto licenciado sob a **MIT License**.
