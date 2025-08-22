@@ -1,43 +1,74 @@
 /* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 :root {
-  --primary-blue: #2a75bb;
-  --secondary-blue: #3b82f6;
-  --primary-orange: #ff9e3f;
-  --secondary-orange: #ffb347;
+  --primary-blue: #0075BE;
+  --secondary-blue: #003A70;
+  --primary-yellow: #FFCC00;
+  --secondary-yellow: #D5A100;
+  --primary-red: #FF0000;
+  --secondary-red: #CC0000;
   --background-light: #f8fafc;
   --card-bg: #ffffff;
-  --text-dark: #1e293b;
-  --text-light: #64748b;
+  --text-dark: #2E3436;
+  --text-light: #6B7280;
+  --gradient-primary: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+  --gradient-secondary: linear-gradient(135deg, var(--primary-yellow) 0%, var(--secondary-yellow) 100%);
+  --gradient-accent: linear-gradient(135deg, var(--primary-red) 0%, var(--secondary-red) 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #ffaa00dd;
+  background: linear-gradient(60deg, #fffaf0 0%, #fffaf0 100%);
   color: var(--text-dark);
   line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Adicione um padrão de fundo sutil */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230075BE' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  z-index: -1;
 }
 
 /* Adicione isso para os cards */
 .card {
   background: var(--card-bg);
-  border: 1px solid #e2e8f0;
-  /* restante permanece igual */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
 }
 
 /* Adicione isso para os botões e elementos interativos */
 button, .searchInput:focus {
-  border-color: var(--primary-blue);
-  box-shadow: 0 0 0 3px rgba(42, 117, 187, 0.2);
+  border-color: var(--primary-yellow);
+  box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.2);
 }
 
 /* Adicione cores para os headers */
 h1, h2, h3 {
-  color: #000dff;
+  color: var(--text-dark);
+  font-weight: 700;
 }
 
-/* Adicione destaque laranja para elementos importantes */
+/* Adicione destaque para elementos importantes */
 .highlight {
-  color: var(--primary-orange);
+  background: var(--gradient-secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 button {
@@ -48,14 +79,82 @@ button:active {
   transform: scale(0.98);
 }
 
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gradient-primary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-blue);
+}
+
+/* Animações globais */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
+
 /* Melhorando a responsividade */
 @media (max-width: 480px) {
   .pokemonGrid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
   
   .backButton {
-    padding: 0.4rem 0.8rem;
-    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
   }
+}
+
+/* Estilos para o loading global */
+.global-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--gradient-primary);
+}
+
+.pokeball-loading {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(to bottom, #ff0000 0%, #ff0000 45%, #000000 45%, #000000 50%, #ffffff 50%, #ffffff 100%);
+  border-radius: 50%;
+  border: 3px solid #000;
+  position: relative;
+  animation: rotate 1s infinite linear;
+}
+
+.pokeball-loading::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  background: #ffffff;
+  border: 3px solid #000;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }

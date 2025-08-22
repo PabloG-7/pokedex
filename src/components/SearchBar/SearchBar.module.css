@@ -1,58 +1,90 @@
 .searchContainer {
-  margin: 1.5rem auto;
+  margin: 2rem auto;
   width: 90%;
-  max-width: 600px;
-  padding: 0 1rem;
+  max-width: 700px;
+  padding: 0 1.2rem;
   box-sizing: border-box;
+  position: relative;
 }
 
 .searchInput {
   width: 100%;
-  padding: 0.75rem 1.5rem;
-  border: 2px solid #e2e8f0;
-  border-radius: 2rem;
-  font-size: 1rem;
-  background-color: #fff;
-  color: #1e293b;
+  padding: 1rem 1.8rem 1rem 3.5rem;
+  border: 3px solid #0055ff;
+  border-radius: 3rem;
+  font-size: 1.1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #1F2937;
   outline: none;
-  transition: border 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
   box-sizing: border-box;
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
 }
 
 .searchInput:focus {
-  border-color: var(--primary-blue, #2a75bb);
-  box-shadow: 0 0 0 4px rgba(42, 117, 187, 0.2);
+  border-color: #FFCC00;
+  box-shadow: 0 0 0 4px rgba(255, 204, 0, 0.2), 0 10px 25px rgba(0, 0, 0, 0.1);
+  background-color: #FFFFFF;
 }
 
 .searchInput::placeholder {
-  color: #94a3b8;
+  color: #9CA3AF;
+  font-weight: 400;
+}
+
+.searchContainer::before {
+  content: "🔍";
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #6B7280;
+  z-index: 2;
 }
 
 /* Tablets */
 @media (max-width: 768px) {
   .searchInput {
-    padding: 0.65rem 1.25rem;
-    font-size: 0.95rem;
+    padding: 0.9rem 1.5rem 0.9rem 3rem;
+    font-size: 1rem;
+  }
+  
+  .searchContainer::before {
+    left: 1.7rem;
+    font-size: 1.1rem;
   }
 }
 
 /* Smartphones */
 @media (max-width: 480px) {
   .searchContainer {
-    margin: 1rem auto;
-    padding: 0 0.5rem;
+    margin: 1.5rem auto;
+    padding: 0 0.8rem;
   }
 
   .searchInput {
-    padding: 0.6rem 1rem;
-    font-size: 0.9rem;
+    padding: 0.8rem 1.2rem 0.8rem 2.8rem;
+    font-size: 0.95rem;
+    border-width: 2px;
+  }
+  
+  .searchContainer::before {
+    left: 1.5rem;
+    font-size: 1rem;
   }
 }
 
 /* Telas muito pequenas */
 @media (max-width: 320px) {
   .searchInput {
-    padding: 0.5rem 0.75rem;
-    font-size: 0.85rem;
+    padding: 0.7rem 1rem 0.7rem 2.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .searchContainer::before {
+    left: 1.3rem;
   }
 }
