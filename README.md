@@ -6,7 +6,7 @@ Uma Pokédex interativa criada com **React**, **Vite** e **JavaScript**, que con
 
 🔗 Acesse o projeto online: [https://pokedex-nine-vert.vercel.app](https://pokedex-nine-vert.vercel.app)
 
-![Pokédex - Demonstração](https://raw.githubusercontent.com/PabloG-7/pokedex/refs/heads/main/pokedex-apresentacao.png)
+![Pokédex - Demonstração](https://raw.githubusercontent.com/PabloG-7/pokedex/refs/heads/main/pokedex-linkedin.png)
 
 ## 🔧 Funcionalidades
 
